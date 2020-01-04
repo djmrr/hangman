@@ -1,8 +1,9 @@
 defmodule HangmanTest do
   use ExUnit.Case
+  alias Hangman.Game
   doctest Hangman
 
-  test "greets the world" do
-    assert Hangman.hello() == :world
+  test "works" do
+    assert Hangman.new_game() != nil
   end
 end
